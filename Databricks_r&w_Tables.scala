@@ -1,5 +1,6 @@
 
-
+// Read from Table
+df = spark.table("tablename")
 
 
 // Write to tables
