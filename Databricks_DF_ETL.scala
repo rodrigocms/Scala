@@ -11,7 +11,7 @@ val anonymousDF = eventsDF.drop("user_id", "geo", "device")
 val noSalesDF = eventsDF.drop(col("ecommerce"))
 
 // CREATE or REPLACE Columns
-val mobileDF = eventsDF.withColumn("mobile", col("device").isin("iOS", "Android"))
+val mobileDF = eventsDF.withColumn("mobile", col("device").isin(["iOS", "Android"]))
 
 val purchaseQuantityDF = eventsDF.withColumn("purchase_quantity", col("ecommerce.total_item_quantity").cast("int"))
 
