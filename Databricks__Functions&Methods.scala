@@ -2,6 +2,7 @@
 // Documentation
 https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/DataFrameReader.html
 
+lst.getClass   //get data type
 
 // Reference to Columns - Scala
 col("columnName")
